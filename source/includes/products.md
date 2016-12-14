@@ -18,6 +18,8 @@ per_parge | The number of products to get per page | `GET /api/products?per_page
 `Status code: 200`
 
 ```
+> Request response
+
 {
 	"pages": 5,
 	"currentPage": 1,
