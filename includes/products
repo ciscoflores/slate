@@ -30,7 +30,7 @@
 <p><strong>Successful status</strong></p>
 
 <p><code class="prettyprint">Status code: 200</code></p>
-<pre class="highlight plaintext"><code>&gt; Request response
+<pre class="highlight plaintext"><code>`Request response`
 
 {
     "pages": 5,
