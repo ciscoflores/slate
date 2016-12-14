@@ -43,3 +43,72 @@ per_parge | The number of products to get per page | `GET /api/products?per_page
 }
 ```
 
+##Show
+
+Details of a product
+
+By _permalink_:
+
+`GET /api/products/a-product`
+
+By _id_:
+
+`GET /api/products/123`
+
+**Successful status**
+
+`Status code: 200`
+
+>Request response
+
+```
+{
+	"master": {
+		"productId": 1,
+		"name": "Example product",
+		"description": "This is a product example.",
+		"displayPrice": "15.99",
+		"permalink": "ruby-on-rails-tote",
+		"inStock": true,
+		"availableOn": "2012/10/17 14:04",
+		"images": {
+				"miniUrl": "https://bucket.com/12343242323423",
+				"smallUrl": "https://bucket.com/12343242323423",
+				"normalUrl": "https://bucket.com/12343242323423",
+				"largeUrl": "https://bucket.com/12343242323423"
+       }
+	},
+	"variants": [ 
+		{
+			"productId": 1,
+			"name": "Example product",
+			"description": "This is a product example.",
+			"displayPrice": "15.99",
+			"permalink": "ruby-on-rails-tote",
+			"inStock": true,
+			"availableOn": "2012/10/17 14:04",
+			"images": {
+					"miniUrl": "https://bucket.com/12343242323423",
+					"smallUrl": "https://bucket.com/12343242323423",
+					"normalUrl": "https://bucket.com/12343242323423",
+					"largeUrl": "https://bucket.com/12343242323423"
+       	}			
+		},
+		{
+			"productId": 1,
+			"name": "Example product",
+			"description": "This is a product example.",
+			"displayPrice": "15.99",
+			"permalink": "ruby-on-rails-tote",
+			"inStock": true,
+			"availableOn": "2012/10/17 14:04",
+			"images": {
+					"miniUrl": "https://bucket.com/12343242323423",
+					"smallUrl": "https://bucket.com/12343242323423",
+					"normalUrl": "https://bucket.com/12343242323423",
+					"largeUrl": "https://bucket.com/12343242323423"
+       	}			
+		}
+	]
+}
+```
