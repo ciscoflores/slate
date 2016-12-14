@@ -336,12 +336,38 @@ Remember — a happy kitten is an authenticated kitten!
 </tr>
 </tbody></table>
 
-          <h2 id="produtcs-index">Produtcs index</h2>
+          <h1 id="products">Products</h1>
 
-<p><strong>Successful status</strong>
-<code class="prettyprint">
-Status code: 200
-</code></p>
+<h2 id="index">Index</h2>
+
+<p>List of products</p>
+
+<p><code class="prettyprint">GET /api/products</code></p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Function</th>
+<th>Form</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>page</td>
+<td>To get an specific page of products</td>
+<td><code class="prettyprint">GET /api/products?page=2</code></td>
+</tr>
+<tr>
+<td>per_parge</td>
+<td>The number of products to get per page</td>
+<td><code class="prettyprint">GET /api/products?per_page=25</code></td>
+</tr>
+</tbody></table>
+
+<p><strong>Successful status</strong></p>
+
+<p><code class="prettyprint">Status code: 200</code></p>
 <pre class="highlight json"><code><span class="p">{</span><span class="w">
     </span><span class="nt">"pages"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
     </span><span class="nt">"currentPage"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -352,6 +378,8 @@ Status code: 200
             </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Example product"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"This is the description for a product"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"displayPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"15.99"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"permalink"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ruby-on-rails-tote"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"availableOn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2012-10-17T03:43:57Z"</span><span class="p">,</span><span class="w">
             </span><span class="nt">"images"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
                 </span><span class="nt">"miniUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://bucket.com/12343242323423"</span><span class="p">,</span><span class="w">
                 </span><span class="nt">"smallUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://bucket.com/12343242323423"</span><span class="p">,</span><span class="w">
