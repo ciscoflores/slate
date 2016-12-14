@@ -37,7 +37,7 @@ per_parge | The number of products to get per page | `GET /api/products?per_page
 				"smallUrl": "https://bucket.com/12343242323423",
 				"normalUrl": "https://bucket.com/12343242323423",
 				"largeUrl": "https://bucket.com/12343242323423"
-       	}
+       		}
        }
    ]
 }
