@@ -56,3 +56,72 @@
    </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
+<h2 id="show">Show</h2>
+
+<p>Details of a product</p>
+
+<p>By <em>permalink</em>:</p>
+
+<p><code class="prettyprint">GET /api/products/a-product</code></p>
+
+<p>By <em>id</em>:</p>
+
+<p><code class="prettyprint">GET /api/products/123</code></p>
+
+<p><strong>Successful status</strong></p>
+
+<p><code class="prettyprint">Status code: 200</code></p>
+
+<blockquote>
+<p>Request response</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+    </span><span class="nt">"master"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nt">"productId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Example product"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"This is a product example."</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"displayPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"15.99"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"permalink"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ruby-on-rails-tote"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"inStock"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"availableOn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2012/10/17 14:04"</span><span class="p">,</span><span class="w">
+        </span><span class="nt">"images"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nt">"miniUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://bucket.com/12343242323423"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"smallUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://bucket.com/12343242323423"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"normalUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://bucket.com/12343242323423"</span><span class="p">,</span><span class="w">
+                </span><span class="nt">"largeUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://bucket.com/12343242323423"</span><span class="w">
+       </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nt">"variants"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> 
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"productId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Example product"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"This is a product example."</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"displayPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"15.99"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"permalink"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ruby-on-rails-tote"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"inStock"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"availableOn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2012/10/17 14:04"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"images"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="nt">"miniUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://bucket.com/12343242323423"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"smallUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://bucket.com/12343242323423"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"normalUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://bucket.com/12343242323423"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"largeUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://bucket.com/12343242323423"</span><span class="w">
+        </span><span class="p">}</span><span class="w">           
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"productId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Example product"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"This is a product example."</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"displayPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"15.99"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"permalink"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ruby-on-rails-tote"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"inStock"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"availableOn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2012/10/17 14:04"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"images"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                    </span><span class="nt">"miniUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://bucket.com/12343242323423"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"smallUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://bucket.com/12343242323423"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"normalUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://bucket.com/12343242323423"</span><span class="p">,</span><span class="w">
+                    </span><span class="nt">"largeUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://bucket.com/12343242323423"</span><span class="w">
+        </span><span class="p">}</span><span class="w">           
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
